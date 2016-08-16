@@ -14,7 +14,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"gopkg.in/mohandutt134/redis.v5"
+	"gopkg.in/mohandutt134/redis.v4"
 )
 
 const (
@@ -94,7 +94,7 @@ var _ = AfterSuite(func() {
 
 func TestGinkgoSuite(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "gopkg.in/mohandutt134/redis.v5")
+	RunSpecs(t, "gopkg.in/mohandutt134/redis.v4")
 }
 
 //------------------------------------------------------------------------------

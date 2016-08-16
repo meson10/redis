@@ -9,7 +9,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"gopkg.in/mohandutt134/redis.v5/internal/pool"
+	"gopkg.in/mohandutt134/redis.v4/internal/pool"
 )
 
 var _ = Describe("ConnPool", func() {

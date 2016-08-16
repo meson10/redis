@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"gopkg.in/mohandutt134/redis.v5/internal"
-	"gopkg.in/mohandutt134/redis.v5/internal/pool"
+	"gopkg.in/mohandutt134/redis.v4/internal"
+	"gopkg.in/mohandutt134/redis.v4/internal/pool"
 )
 
 // Posts a message to the given channel.
