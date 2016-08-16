@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/redis.v4"
+	"gopkg.in/redis.v5"
 )
 
 var client *redis.Client
@@ -279,11 +279,11 @@ func ExamplePubSub_Receive() {
 
 func ExampleScript() {
 	IncrByXX := redis.NewScript(`
-		if redis.call("GET", KEYS[1]) ~= false then
-			return redis.call("INCRBY", KEYS[1], ARGV[1])
-		end
-		return false
-	`)
+        if redis.call("GET", KEYS[1]) ~= false then
+            return redis.call("INCRBY", KEYS[1], ARGV[1])
+        end
+        return false
+    `)
 
 	n, err := IncrByXX.Run(client, []string{"xx_counter"}, 2).Result()
 	fmt.Println(n, err)

@@ -14,8 +14,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"gopkg.in/redis.v4"
-	"gopkg.in/redis.v4/internal/hashtag"
+	"gopkg.in/redis.v5"
+	"gopkg.in/redis.v5/internal/hashtag"
 )
 
 type clusterScenario struct {
@@ -301,15 +301,15 @@ var _ = Describe("Cluster", func() {
 		})
 
 		// It("should CLUSTER READONLY", func() {
-		// 	res, err := cluster.primary().ReadOnly().Result()
-		// 	Expect(err).NotTo(HaveOccurred())
-		// 	Expect(res).To(Equal("OK"))
+		//  res, err := cluster.primary().ReadOnly().Result()
+		//  Expect(err).NotTo(HaveOccurred())
+		//  Expect(res).To(Equal("OK"))
 		// })
 
 		// It("should CLUSTER READWRITE", func() {
-		// 	res, err := cluster.primary().ReadWrite().Result()
-		// 	Expect(err).NotTo(HaveOccurred())
-		// 	Expect(res).To(Equal("OK"))
+		//  res, err := cluster.primary().ReadWrite().Result()
+		//  Expect(err).NotTo(HaveOccurred())
+		//  Expect(res).To(Equal("OK"))
 		// })
 	})
 })

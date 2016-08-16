@@ -1,11 +1,11 @@
-package redis // import "gopkg.in/redis.v4"
+package redis // import "gopkg.in/redis.v5"
 
 import (
 	"fmt"
 	"log"
 
-	"gopkg.in/redis.v4/internal"
-	"gopkg.in/redis.v4/internal/pool"
+	"gopkg.in/redis.v5/internal"
+	"gopkg.in/redis.v5/internal/pool"
 )
 
 func SetLogger(logger *log.Logger) {

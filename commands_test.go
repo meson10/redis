@@ -9,7 +9,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"gopkg.in/redis.v4"
+	"gopkg.in/redis.v5"
 )
 
 var _ = Describe("Commands", func() {
@@ -27,9 +27,9 @@ var _ = Describe("Commands", func() {
 	Describe("server", func() {
 
 		// It("should Auth", func() {
-		// 	auth := client.Auth("password")
-		// 	Expect(auth.Err()).To(MatchError("ERR Client sent AUTH, but no password is set"))
-		// 	Expect(auth.Val()).To(Equal(""))
+		//  auth := client.Auth("password")
+		//  Expect(auth.Err()).To(MatchError("ERR Client sent AUTH, but no password is set"))
+		//  Expect(auth.Val()).To(Equal(""))
 		// })
 
 		It("should Echo", func() {
@@ -45,9 +45,9 @@ var _ = Describe("Commands", func() {
 		})
 
 		// It("should Select", func() {
-		// 	sel := client.Select(1)
-		// 	Expect(sel.Err()).NotTo(HaveOccurred())
-		// 	Expect(sel.Val()).To(Equal("OK"))
+		//  sel := client.Select(1)
+		//  Expect(sel.Err()).NotTo(HaveOccurred())
+		//  Expect(sel.Val()).To(Equal("OK"))
 		// })
 
 		It("should BgRewriteAOF", func() {
