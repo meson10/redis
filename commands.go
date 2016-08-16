@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/redis.v5/internal"
+	"gopkg.in/mohandutt134/redis.v5/internal"
 )
 
 func formatInt(i int64) string {

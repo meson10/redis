@@ -14,8 +14,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"gopkg.in/redis.v5"
-	"gopkg.in/redis.v5/internal/hashtag"
+	"gopkg.in/mohandutt134/redis.v5"
+	"gopkg.in/mohandutt134/redis.v5/internal/hashtag"
 )
 
 type clusterScenario struct {

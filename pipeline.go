@@ -4,7 +4,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"gopkg.in/redis.v5/internal/pool"
+	"gopkg.in/mohandutt134/redis.v5/internal/pool"
 )
 
 // Pipeline implements pipelining as described in

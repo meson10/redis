@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/redis.v5/internal"
-	"gopkg.in/redis.v5/internal/consistenthash"
-	"gopkg.in/redis.v5/internal/hashtag"
-	"gopkg.in/redis.v5/internal/pool"
+	"gopkg.in/mohandutt134/redis.v5/internal"
+	"gopkg.in/mohandutt134/redis.v5/internal/consistenthash"
+	"gopkg.in/mohandutt134/redis.v5/internal/hashtag"
+	"gopkg.in/mohandutt134/redis.v5/internal/pool"
 )
 
 var (

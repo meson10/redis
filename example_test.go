@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/redis.v5"
+	"gopkg.in/mohandutt134/redis.v5"
 )
 
 var client *redis.Client

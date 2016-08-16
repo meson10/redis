@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"gopkg.in/redis.v5/internal"
-	"gopkg.in/redis.v5/internal/pool"
+	"gopkg.in/mohandutt134/redis.v5/internal"
+	"gopkg.in/mohandutt134/redis.v5/internal/pool"
 )
 
 var errDiscard = errors.New("redis: Discard can be used only inside Exec")
